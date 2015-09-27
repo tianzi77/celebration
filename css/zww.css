@@ -1,0 +1,473 @@
+@charset 'UTF-8';
+
+/** 
+    浏览器重置
+    code by zww
+**/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+body {
+    font-family: "微软雅黑","Microsoft YaHei","宋体", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+/*头部样式*/
+
+.header {
+    background: url(../images/header.png) no-repeat;
+    background-position: top center;
+    height: 608px;
+    position: relative;
+}
+
+.header .header-link {
+    width: 880px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+}
+
+.header .header-link a {
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    font-weight: 900;
+}
+
+.header .header-link a.a-first {
+    top: 100px;
+    left: 35px;
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.header .header-link a.a-second {
+    top: 100px;
+    left: 270px;
+}
+
+.header .header-link a.a-third {
+    top: 77px;
+    left: 507px;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.header .header-link a.a-fourth {
+    top: 116px;
+    right: 55px;
+    -webkit-transform: rotate(-9deg);
+    -ms-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+}
+
+
+/*第一屏*/
+
+#first {
+    background: url(../images/first.png) no-repeat;
+    background-position: top center;
+    height: 869px;
+}
+
+#first .first-link {
+    width: 920px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#first .first-link a > img {
+    position: absolute;
+}
+
+#first .first-link a > img.ww {
+    top: 78px;
+    right: 40px;
+}
+
+#first .first-link a > img.first-link-one {
+    top: 215px;
+    left: 5px;
+}
+
+#first .first-link a > img.first-link-two {
+    top: 215px;
+    left: 331px;
+}
+
+#first .first-link a > img.first-link-three {
+    top: 400px;
+    left: 5px;
+}
+
+#first .first-link a > img.first-link-four {
+    top: 400px;
+    left: 331px;
+}
+
+#first .first-link .icon1 {
+    top: 190px;
+    position: absolute;
+}
+
+#first .first-link .icon2 {
+    position: absolute;
+    top: 195px;
+    left: 320px;
+}
+
+#first .first-link .icon3 {
+    position: absolute;
+    bottom: 180px;
+    left: -10px;
+}
+
+#first .first-link .icon4 {
+    position: absolute;
+    bottom: 182px;
+    right: 553px;
+}
+
+#first .first-link .scrollTxt {
+    color: #ffa44c;
+    font-size: 12px;
+    font-weight: 200;
+    position: absolute;
+    top: 320px;
+    right: 15px;
+    text-align: left;
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.scrollTxt li {
+    padding-top: 20px;
+}
+
+#first .first-link .scrollTxt span {
+    display: inline-block;
+}
+
+#first .first-link .other {
+    width: 270px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 218px;
+}
+
+
+/*第二屏*/
+
+#second {
+    background: url(../images/second.png) no-repeat;
+    background-position: top center;
+    height: 1032px;
+}
+
+#second .second-link {
+    width: 880px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    top: 450px;
+}
+
+#second .second-link-one {
+    position: absolute;
+    top: 110px;
+    left: 250px;
+}
+
+#second .second-link-two {
+    position: absolute;
+    top: 110px;
+    left: 700px;
+}
+
+#second .notice {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    cursor: help;
+}
+
+#second span {
+    display: block;
+    width: 350px;
+    /*  height: 100px;*/
+    background: yellow no-repeat;
+    color: #745a0c;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    top: 44px;
+    right: -100px;
+    text-align: justify;
+    display: none;
+    padding: 10px;
+    z-index: 9999;
+}
+
+#second .notice:hover + span {
+    display: block;
+}
+
+#second .second-link-dz {
+    position: absolute;
+    top: 190px;
+    right: 240px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/*第三屏*/
+
+#third {
+    background: url(../images/third.png) no-repeat;
+    background-position: top center;
+    height: 1378px;
+}
+
+#third .third-link {
+    width: 880px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+}
+
+#third .third-link p:nth-child(2),
+#third .third-link p:last-child,
+#third .third-link p:first-child {
+    margin-left: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 200;
+}
+
+#third .third-link .yh {
+    color: #ffef67;
+}
+
+#third .third-link .book {
+    color: #ffef67;
+    cursor: help;
+}
+
+#third .third-link .book-txt {
+    position: absolute;
+    right: 220px;
+    top: 204px;
+    background: yellow;
+    color: #745a0c;
+    font-weight: 100;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+}
+
+#third .third-link .book:hover + .book-txt,
+#third .third-link .book:hover > .triangle-upone {
+    display: block;
+}
+
+#third .third-link #txt {
+    margin: 50px 0 0 20px;
+    width: 850px;
+    height: 150px;
+    max-height: 850px;
+    max-height: 150px;
+    resize: none;
+    border-radius: 10px;
+}
+
+#third .third-link .fankui {
+    position: absolute;
+    left: 50%;
+    margin-left: -129px;
+    top: 420px;
+    cursor: pointer;
+}
+
+#third .third-link .confirm {
+    background: yellow;
+    width: 332px;
+    height: 42px;
+    border-radius: 10px;
+    color: #745a0c;
+    position: absolute;
+    top: 330px;
+    left: 250px;
+    display: none;
+    padding: 5px;
+}
+
+#third .third-link .error {
+    background: yellow;
+    border-radius: 5px;
+    color: #745a0c;
+    width: 150px;
+    position: absolute;
+    top: 330px;
+    left: 350px;
+    display: none;
+    padding: 5px;
+}
+
+
+/*第四屏*/
+
+#fourth {
+    background: url(../images/fourth.png) no-repeat;
+    background-position: top center;
+    height: 813px;
+}
+
+#fourth .fourth-link {
+    position: relative;
+    width: 880px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#fourth .fourth-link .fourth-link-one {
+    position: absolute;
+    top: 290px;
+    left: 325px;
+}
+
+#fourth .fourth-link .fourth-link-two {
+    position: absolute;
+    top: 365px;
+    left: 325px;
+}
+
+#fourth .fourth-link .fourth-link-three {
+    position: absolute;
+    top: 445px;
+    left: 325px;
+}
+
+
+/* 侧边栏 */
+
+#rTop {
+    position: fixed;
+    right: 55px;
+    bottom: 50%;
+    margin-bottom: -37.5px;
+    display: none;
+    font-size: 14px;
+}
+
+#rTop a {
+    color: #de5400;
+}
+
+#rTop a.xufei-link {
+    position: absolute;
+    left: 11px;
+    top: 15px;
+}
+
+#rTop a.fuli-link {
+    position: absolute;
+    left: 11px;
+    top: 44px;
+}
+
+#rTop a.fankui-link {
+    position: absolute;
+    left: 11px;
+    top: 72px;
+}
+
+#rTop a.invite-link {
+    position: absolute;
+    left: 11px;
+    top: 100px;
+}
+
+#rTop a.top {
+    position: absolute;
+    left: 22px;
+    top: 124px;
+    font-size: 12px;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid yellow;
+    position: absolute;
+    right: 98px;
+    top: -7px;
+}
+#third .third-link .false {
+    background: yellow;
+    border-radius: 5px;
+    color: #745a0c;
+    width: 183px;
+    position: absolute;
+    top: 310px;
+    left: 350px;
+    display: none;
+    padding: 5px;
+}

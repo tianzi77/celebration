@@ -1,0 +1,401 @@
+@charset 'UTF-8';
+
+/** 
+    浏览器重置
+    code by zww
+**/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+body {
+    font-family: "微软雅黑", "Microsoft YaHei", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+/*头部样式*/
+
+.header {
+    background: url(../images/header.png) no-repeat;
+    background-position: top center;
+    height: 608px;
+    position: relative;
+    .header-link {
+        width: 880px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+        top: 400px;
+        a {
+            color: #fff;
+            font-size: 22px;
+            position: absolute;
+            font-weight: 900;
+        }
+        a.a-first {
+            top: 100px;
+            left: 35px;
+            -webkit-transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+        }
+        a.a-second {
+            top: 100px;
+            left: 270px;
+        }
+        a.a-third {
+            top: 77px;
+            left: 507px;
+            -webkit-transform: rotate(5deg);
+            -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
+        }
+        a.a-fourth {
+            top: 116px;
+            right: 55px;
+            -webkit-transform: rotate(-9deg);
+            -ms-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+        }
+    }
+}
+
+
+/*第一屏*/
+
+#first {
+    background: url(../images/first.png) no-repeat;
+    background-position: top center;
+    height: 869px;
+    .first-link {
+        width: 920px;
+        height: 600px;
+        margin: 0 auto;
+        position: relative;
+        a>img {
+            position: absolute;
+        }
+        a>img.ww {
+            top: 78px;
+            right: 40px;
+        }
+        a>img.first-link-one {
+            top: 215px;
+            left: 5px;
+        }
+        a>img.first-link-two {
+            top: 215px;
+            left: 331px;
+        }
+        a>img.first-link-three {
+            top: 400px;
+            left: 5px;
+        }
+        a>img.first-link-four {
+            top: 400px;
+            left: 331px;
+        }
+        .icon1 {
+            top: 190px;
+            position: absolute;
+        }
+        .icon2 {
+            position: absolute;
+            top: 195px;
+            left: 320px;
+        }
+        .icon3 {
+            position: absolute;
+            bottom: 180px;
+            left: -10px;
+        }
+        .icon4 {
+            position: absolute;
+            bottom: 182px;
+            right: 553px;
+        }
+        .scrollTxt {
+            color: #ffa44c;
+            font-size: 12px;
+            font-weight: 200;
+            position: absolute;
+            top: 320px;
+            right: 0;
+            text-align: left;
+            width: 255px;
+            height: 230px;
+            overflow: hidden;
+            .scrollTxt {
+                //                position: relative;
+            }
+            span {
+                display: inline-block;
+                //                background: red;
+            }
+            //            text-justify:inter-ideograph;
+        }
+        .other {
+            width: 270px;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            top: 218px;
+        }
+    }
+}
+
+
+/*第二屏*/
+
+#second {
+    background: url(../images/second.png) no-repeat;
+    background-position: top center;
+    height: 1032px;
+    .second-link {
+        width: 880px;
+        height: 250px;
+        margin: 0 auto;
+        position: relative;
+        top: 450px;
+    }
+    .second-link-one {
+        position: absolute;
+        top: 110px;
+        left: 250px;
+    }
+    .second-link-two {
+        position: absolute;
+        top: 110px;
+        left: 700px;
+    }
+    .notice {
+        position: absolute;
+        right: 0;
+        top: 22px;
+        cursor: help;
+    }
+    span {
+        display: block;
+        width: 350px;
+        height: 100px;
+        background: yellow;
+        color: #745a0c;
+        border-radius: 5px;
+        font-weight: 100;
+        position: absolute;
+        top: 44px;
+        right: -100px;
+        text-align: justify;
+        display: none;
+        padding: 10px;
+        z-index: 9999;
+    }
+    .notice:hover+span {
+        display: block;
+    }
+    .second-link-dz {
+        position: absolute;
+        top: 190px;
+        right: 240px;
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+
+/*第三屏*/
+
+#third {
+    background: url(../images/third.png) no-repeat;
+    background-position: top center;
+    height: 1378px;
+    .third-link {
+        width: 880px;
+        height: 500px;
+        margin: 0 auto;
+        position: relative;
+        top: 150px;
+        .first-p {}
+        p: nth-child(2), p:last-child, p:first-child {
+            margin-left: 10px;
+            padding: 10px;
+            color: #fff;
+            font-weight: 200;
+        }
+        .yh {
+            color: #ffef67;
+        }
+        .book {
+            color: #ffef67;
+            cursor: help;
+        }
+        .book-txt {
+            position: absolute;
+            right: 190px;
+            top: 210px;
+            background: yellow;
+            color: #745a0c;
+            font-weight: 100;
+            border-radius: 5px;
+            padding: 5px;
+            display: none;
+        }
+        .book:hover+.book-txt {
+            display: block;
+        }
+        #txt {
+            margin: 50px 0 0 20px;
+            width: 850px;
+            height: 150px;
+            max-height: 850px;
+            max-height: 150px;
+            resize: none;
+            border-radius: 10px;
+        }
+        .fankui {
+            position: absolute;
+            left: 50%;
+            margin-left: -129px;
+            top: 420px;
+            cursor: pointer;
+        }
+        .confirm {
+            background: yellow;
+            width: 332px;
+            height: 42px;
+            border-radius: 10px;
+            color: #745a0c;
+            position: absolute;
+            top: 330px;
+            left: 250px;
+            display: none;
+            padding: 5px;
+        }
+        .error {
+            background: yellow;
+            border-radius: 5px;
+            color: #745a0c;
+            width: 150px;
+            position: absolute;
+            top: 330px;
+            left: 350px;
+            display: none;
+            padding: 5px;
+        }
+    }
+}
+
+
+/*第四屏*/
+
+#fourth {
+    background: url(../images/fourth.png) no-repeat;
+    background-position: top center;
+    height: 813px;
+    .fourth-link {
+        position: relative;
+        width: 880px;
+        height: 500px;
+        margin: 0 auto;
+        .fourth-link-one {
+            position: absolute;
+            top: 290px;
+            left: 325px;
+        }
+        .fourth-link-two {
+            position: absolute;
+            top: 365px;
+            left: 325px;
+        }
+        .fourth-link-three {
+            position: absolute;
+            top: 445px;
+            left: 325px;
+        }
+    }
+}
+
+
+/* 侧边栏 */
+
+#rTop {
+    position: fixed;
+    right: 55px;
+    bottom: 50%;
+    margin-bottom: -37.5px;
+    display: none;
+    img {}
+    a {
+        color: #de5400;
+    }
+    a.xufei-link {
+        position: absolute;
+        left: 6px;
+        top: 10px;
+    }
+    a.fuli-link {
+        position: absolute;
+        left: 6px;
+        top: 40px;
+    }
+    a.fankui-link {
+        position: absolute;
+        left: 6px;
+        top: 70px;
+    }
+    a.invite-link {
+        position: absolute;
+        left: 6px;
+        top: 100px;
+    }
+    a.top {
+        position: absolute;
+        left: 15px;
+        top: 120px;
+    }
+}
